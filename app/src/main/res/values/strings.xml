@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Orchidea</string>
+    <string name="solo">Solo</string>
+    <string name="multicast">Multicast</string>
+    <string name="centralizado">Centralizado</string>
+    <string name="action_link">What is this?</string>
+    <string name="action_exit">Exit</string>
+    <string name="piano">Piano</string>
+    <string name="cuica">Cuica</string>
+    <string name="shake">Shake</string>
+    <string name="instrumentos">Instrumentos</string>
+    <string name="nota_1">Nota 1</string>
+    <string name="nota_2">Nota 2</string>
+    <string name="nota">Nota</string>
+    <string name="todo">TODO</string>
+</resources>

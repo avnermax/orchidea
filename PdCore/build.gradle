@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+    }
+}
+apply plugin: 'com.android.library'
+
+dependencies {
+    implementation project(':AndroidMidi')
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 21
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src','jni/libpd/java']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+
+            jniLibs.srcDirs = ['src', 'libs']
+
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        androidTest.setRoot('tests')
+    }
+}
